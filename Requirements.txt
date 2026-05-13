@@ -1,0 +1,64 @@
+Raspberry Pi OS Setup Commands
+
+1. Update Raspberry Pi OS
+--------------------------------
+sudo apt update
+sudo apt upgrade -y
+
+2. Enable I2C Interface (required for Yahboom motor controller)
+--------------------------------
+sudo raspi-config
+
+Interface Options
+→ I2C
+→ Enable
+
+Reboot afterward:
+sudo reboot
+
+3. Install Python Dependencies
+--------------------------------
+sudo apt install -y python3-pip python3-opencv python3-pil
+pip3 install numpy
+pip3 install tflite-runtime
+pip3 install opencv-python
+pip3 install picamera2
+pip3 install pytesseract
+
+4. Install OCR Engine
+--------------------------------
+sudo apt install -y tesseract-ocr
+
+5. Clone Yahboom Raspbot Repository
+--------------------------------
+git clone https://github.com/YahboomTechnology/Raspbot.git
+
+6. Extract / Access Yahboom Motor Driver
+--------------------------------
+cd Raspbot
+
+Motor control library used:
+YB_Pcb_Car.py
+
+7. Deploy TensorFlow Lite Model
+--------------------------------
+Copy the trained TensorFlow Lite model file onto the Raspberry Pi:
+
+Example:
+Yolo8n.tflite
+or
+New_model.tflite
+
+Place the model in the same directory as the Python inference script.
+
+8. Verify Camera Operation
+--------------------------------
+libcamera-hello
+
+9. Run Object Detection / Autonomous Driving Script
+--------------------------------
+python3 autonomous_drive.py
+
+10. Stop Any Running Python Robot Processes
+--------------------------------
+pkill -f python
