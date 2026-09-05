@@ -1,5 +1,5 @@
 # Capstone
-Draft of Capstone Repository for Downloadable Model
+Capstone Repository for Downloadable Model
 
 Imports/Dependencies Section:
 ---------------------------------------------------------------------------------------------------------------------------
