@@ -80,7 +80,7 @@ The vehicle does not simply react to every detection. The control logic evaluate
 Capstone/
 ├── New_model.tflite
 ├── RaspbotAIModelDemo.py
-├── Requirements.txt
+├── requirements.txt
 ├── Yolo_model.ipynb
 └── README.md
 ```
@@ -124,7 +124,7 @@ cd Capstone
 Install the required Python dependencies:
 
 ```bash
-pip install -r Requirements.txt
+pip install -r requirements.txt
 ```
 
 Tesseract OCR must also be installed and configured on the Raspberry Pi.
