@@ -76,28 +76,28 @@ The vehicle does not simply react to every detection. The control logic evaluate
 
 ## Repository Structure
 
-```text
-Capstone/
-├── New_model.tflite
+traffic-sign-ml-raspbot/
+├── model/
+│   └── New_model.tflite
+├── model_notebooks/
+│   └── Yolo_model.ipynb
 ├── RaspbotAIModelDemo.py
 ├── requirements.txt
-├── Yolo_model.ipynb
 └── README.md
-```
 
-### `RaspbotAIModelDemo.py`
+### RaspbotAIModelDemo.py
 
 The primary vehicle-control and inference script. It initializes the Raspberry Pi camera, loads the trained TensorFlow Lite model, processes camera frames, performs traffic-sign detection and OCR processing, and uses the results to control the Raspbot.
 
-### `New_model.tflite`
+### model/New_model.tflite
 
 The trained TensorFlow Lite machine learning model used for inference on the Raspberry Pi.
 
-### `Yolo_model.ipynb`
+### model_notebooks/Yolo_model.ipynb
 
 The Jupyter Notebook containing the model development and training workflow.
 
-### `requirements.txt`
+### requirements.txt
 
 Contains the Python packages required by the project.
 
@@ -217,8 +217,8 @@ This project was developed as part of my academic work in Applied Computing and 
 
 ## Repository
 
-https://github.com/dssantii/Capstone
+https://github.com/dssantii/traffic-sign-ml-raspbot
 
 ## Main Vehicle & ML Script
 
-https://github.com/dssantii/Capstone/blob/main/RaspbotAIModelDemo.py
+https://github.com/dssantii/traffic-sign-ml-raspbot/blob/main/RaspbotAIModelDemo.py
