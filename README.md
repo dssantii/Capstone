@@ -97,7 +97,7 @@ The trained TensorFlow Lite machine learning model used for inference on the Ras
 
 The Jupyter Notebook containing the model development and training workflow.
 
-### `Requirements.txt`
+### `requirements.txt`
 
 Contains the Python packages required by the project.
 
